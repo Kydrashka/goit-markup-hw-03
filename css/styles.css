@@ -4,6 +4,7 @@
     --white-text-color: #ffffff;
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --accent-text-color: #2196F3;
+    --secondary-background-color: #F5F4FA;
 }
 
 body{
@@ -12,7 +13,22 @@ body{
     font-family: Roboto, sans-serif;
 }
 
+
 /* nav */
+.list-style {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+} 
+
+.header{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid teal;
+}
 .accent{
     color: var(--accent-text-color);
 
@@ -67,20 +83,47 @@ body{
 }
 
 /* section 1, 2, 3 */
+.list {
+    background-color: var(--secondary-background-color);
+}
+p,
+h1,
+h2,
+h3,
+h4{
+    margin: 0 auto;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-hero{
+        background-color: #2F303A;
+}
 .hero{
     color: var(--white-text-color);
-    background-color: #2F303A;
-
+        width: 696px;
+        margin: 0 auto;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        margin-bottom: 40px;
 }
 .button{
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 10px 24px;
+    min-width: 200px;
 
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -96,6 +139,8 @@ body{
     color: var(--title-text-color);
 }
 .title-head {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -107,13 +152,15 @@ body{
     letter-spacing: 0.03em;
 }
 .title-info {
+    padding-top: 0;
     font-size: 36px;
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 .title-names {
-
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -122,18 +169,29 @@ body{
 }
 
 .title-position {
+    margin-bottom: 30px;
 
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
+.photo-worker{
+    margin-bottom: 30px;
+}
 
 /* footer */
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
 }
+.footer-logo{
+    margin-bottom: 28px;
+    outline: 2px solid teal;
+}
 .adress{
+    margin-bottom: 12px;
     color: var(--white-text-color);
     font-style: normal;
 
@@ -144,6 +202,7 @@ body{
 .footer-text-color{
     color: var(--footer-text-color);
 
+    margin-bottom: 12px;
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;    
@@ -185,7 +244,4 @@ body{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-}
-.list-style{
-    list-style-type: none;
 }
