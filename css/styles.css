@@ -103,6 +103,9 @@ h4{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.container-null{
+    padding-bottom: 0;
+}
 .section-hero{
         background-color: #2F303A;
 }
@@ -187,8 +190,8 @@ h4{
     background-color: #2F303A;
 }
 .footer-logo{
+    display: inline-block;
     margin-bottom: 28px;
-    outline: 2px solid teal;
 }
 .adress{
     margin-bottom: 12px;
@@ -200,6 +203,7 @@ h4{
     letter-spacing: 0.03em;
 }
 .footer-text-color{
+    display: inline-block;
     color: var(--footer-text-color);
 
     margin-bottom: 12px;
