@@ -254,7 +254,7 @@ h4{
     letter-spacing: 0.03em;
 }
 .footer-text-color{
-    display: inline-block;
+    display: block;
     color: var(--footer-text-color);
 
     margin-bottom: 12px;
@@ -270,6 +270,12 @@ h4{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+.footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    margin: auto;
 }
 
 /* potfolio */
@@ -317,4 +323,21 @@ h4{
 }
 .portfolio-image{
     margin-bottom: 20px;
+}
+.portfolio-button{
+    display: inline-block;
+    margin-top: 94px;
+}
+.example-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.example-element{
+    margin-left: 30px;
 }
