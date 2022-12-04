@@ -15,6 +15,11 @@ body{
 
 
 /* nav */
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
 .list-style {
     list-style-type: none;
     margin: 0px;
@@ -27,7 +32,6 @@ body{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid teal;
 }
 .accent{
     color: var(--accent-text-color);
@@ -37,7 +41,13 @@ body{
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+.nav{
+    display: flex;
+}
 .nav-logo{
+    margin-right: 93px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
 }
 .nav-logo-black{
@@ -49,6 +59,7 @@ body{
     letter-spacing: 0.03em;
 }
 .nav-list{
+    display: flex;
     color: var(--title-text-color);
 
     font-family: Roboto, sans-serif;
@@ -62,9 +73,21 @@ body{
     color: var(--accent-text-color);
 }
 .nav-list-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     text-decoration: none;
     color: inherit;
 }
+.nav-list > .item + .item{
+    margin-left: 50px;
+}
+.list-style .item + .item{
+    margin-left: 40px;
+}
+
+
 .nav-list-active{
     color: var(--accent-text-color);
 }
@@ -82,7 +105,23 @@ body{
     color: var(--accent-text-color);
 }
 
+.header-list{
+    display: flex;
+}
 /* section 1, 2, 3 */
+.feature-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature-list-item{
+    width: 270px;
+    text-align: start;
+}
+.feature-list-item + .feature-list-item{
+    margin-left: 30px;
+
+}
+
 .list {
     background-color: var(--secondary-background-color);
 }
@@ -182,6 +221,18 @@ h4{
 .photo-worker{
     margin-bottom: 30px;
 }
+.what-we-do-container{
+    display: flex;
+}
+.what-we-do-item + .what-we-do-item{
+    margin-left: 30px;
+}
+.about-us{
+    display: flex;
+}
+.about-us-item + .about-us-item{
+    margin-left: 30px;
+}
 
 /* footer */
 .footer{
@@ -224,7 +275,11 @@ h4{
 /* potfolio */
 
 .button-filter{
+    border-radius: 4px;
+    padding: 6px 22px;
     color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+    border-color: transparent;
 
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -239,13 +294,27 @@ h4{
     background-color: var(--accent-text-color);
 }
 .title-example{
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .title-portfolio{
-
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+.portfolio-header{
+    margin-bottom: 94px;
+}
+.list-style-portfolio{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.title-example{
+    margin-bottom: 4px;
+}
+.portfolio-image{
+    margin-bottom: 20px;
 }
